@@ -13,9 +13,11 @@ public class ModItems
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
 
-   public static final RegistryObject<Item> AWP = ITEMS.register("awp", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AWP = ITEMS.register("awp", ()-> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> AWP_GUN = ITEMS.register("awp_gun", ()-> new AWPgun(new Item.Properties()));
+
+    //public static final RegistryObject<Item> SHOTGUN = ITEMS.register("shotgun", ()-> new AWPgun(new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
