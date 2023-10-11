@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "tutorialmod:item/magnumgun_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "tutorialmod:item/magnumgun_2d"
+    },
+    "ground": {
+      "parent": "tutorialmod:item/magnumgun_2d"
+    },
+    "fixed": {
+      "parent": "tutorialmod:item/magnumgun_2d"
+    }
+  }
+
+
+}

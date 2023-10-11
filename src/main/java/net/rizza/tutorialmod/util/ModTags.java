@@ -1,4 +1,4 @@
-package net.rizza.tutorialemod.util;
+package net.rizza.tutorialmod.util;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -6,7 +6,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.rizza.tutorialemod.TutorialMod;
+import net.rizza.tutorialmod.TutorialMod;
 
 public class ModTags {
     public  static class Blocks{

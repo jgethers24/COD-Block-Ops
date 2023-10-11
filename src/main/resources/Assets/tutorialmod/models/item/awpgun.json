@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "tutorialmod:item/awpgun_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "tutorialmod:item/awpgun_2d"
+    },
+    "ground": {
+      "parent": "tutorialmod:item/awpgun_2d"
+    },
+    "fixed": {
+      "parent": "tutorialmod:item/awpgun_2d"
+    }
+  }
+
+
+}

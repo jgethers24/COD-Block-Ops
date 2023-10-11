@@ -1,4 +1,4 @@
-package net.rizza.tutorialemod;
+package net.rizza.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -8,13 +8,12 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.rizza.tutorialemod.Item.ModItems;
+import net.rizza.tutorialmod.Item.ModItems;
+import net.rizza.tutorialmod.util.ModItemProperties;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -50,9 +49,21 @@ public class TutorialMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey()== CreativeModeTabs.COMBAT){
-            event.accept(ModItems.AWP);
-            event.accept(ModItems.AWP_GUN);
+            event.accept(ModItems.AWPGUN);
         }
+        if(event.getTabKey()== CreativeModeTabs.COMBAT){
+            event.accept(ModItems.SHOTGUN);
+        }
+        if(event.getTabKey()== CreativeModeTabs.COMBAT){
+            event.accept(ModItems.AKGUN);
+        }
+        if(event.getTabKey()== CreativeModeTabs.COMBAT){
+            event.accept(ModItems.MAGNUMGUN);
+        }
+    }
+
+    private void clientSetup(final FMLClientSetupEvent event){
+        ModItemProperties.addCustomItemProperties();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

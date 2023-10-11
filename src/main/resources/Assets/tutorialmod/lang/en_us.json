@@ -1,4 +1,6 @@
 {
-  "item.tutorialmod.awp": "Awp",
-  "item.tutorialmod.awp_gun": "Awp Gun"
+  "item.tutorialmod.awpgun": "Awp",
+  "item.tutorialmod.shotgun": "Shotgun",
+  "item.tutorialmod.magnumgun": "Magnum",
+  "item.tutorialmod.akgun": "AK47"
 }
